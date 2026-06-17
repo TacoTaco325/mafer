@@ -817,12 +817,36 @@ export default function MaferBirthdayPage() {
                     animate={{ rotate: [-2, 2, -2] }}
                     transition={{ repeat: Infinity, duration: 0.5, ease: "linear" }}
                   >
-                    <Mail className="w-36 h-36 text-rose-400 group-hover:text-rose-500 transition-colors drop-shadow-2xl" fill="#fff1f2" strokeWidth={1.5} />
+                    <svg width="240" height="160" viewBox="0 0 240 160" fill="none" xmlns="http://www.w3.org/2000/svg" className="drop-shadow-2xl group-hover:scale-105 transition-transform duration-300">
+                      <defs>
+                        <clipPath id="envelope-clip">
+                          <rect width="240" height="160" rx="16" />
+                        </clipPath>
+                      </defs>
+                      <g clipPath="url(#envelope-clip)">
+                        {/* Base Background */}
+                        <rect width="240" height="160" fill="#fda4af" />
+                        {/* Left Flap */}
+                        <path d="M0 0 L130 80 L0 160 Z" fill="#fecdd3" />
+                        {/* Right Flap */}
+                        <path d="M240 0 L110 80 L240 160 Z" fill="#fecdd3" />
+                        {/* Bottom Flap */}
+                        <path d="M0 160 L120 70 L240 160 Z" fill="#ffe4e6" />
+                        {/* Top Flap */}
+                        <path d="M0 0 L120 95 L240 0 Z" fill="#fb7185" />
+                      </g>
+                      {/* Wax Seal */}
+                      <circle cx="120" cy="95" r="20" fill="#e11d48" className="drop-shadow-md" />
+                      <path
+                        d="M120 102L112.5 94.5C110 92 110 88 112.5 85.5C115 83 119 83 120 86C121 83 125 83 127.5 85.5C130 88 130 92 127.5 94.5L120 102Z"
+                        fill="#fff1f2"
+                      />
+                    </svg>
                   </motion.div>
                   <motion.div
                     animate={{ y: [0, -10, 0] }}
                     transition={{ repeat: Infinity, duration: 2 }}
-                    className="absolute -top-2 -right-6 bg-rose-500 text-white text-sm font-bold px-4 py-1.5 rounded-full shadow-lg"
+                    className="absolute -top-4 -right-4 bg-rose-500 text-white text-sm font-bold px-4 py-1.5 rounded-full shadow-lg z-10"
                   >
                     ¡Ábrime!
                   </motion.div>
