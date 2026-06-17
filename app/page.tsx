@@ -907,7 +907,7 @@ export default function MaferBirthdayPage() {
               Por este y mil cumpleaños más...
             </h2>
             <p className="text-lg md:text-xl text-stone-700 mb-8 leading-relaxed font-light">
-              Prometo seguir cuidándote, sacándote sonrisas a través de la pantalla y estando para vos en cada momento pase lo que pase. Espero que este día sea tan increíble, hermoso y especial como vos.
+              Prometo seguir cuidándote, sacándote sonrisas y estando para vos en cada momento pase lo que pase. Espero que este día sea tan increíble, hermoso y especial como vos.
             </p>
             <p className="text-2xl font-bold text-rose-600 uppercase tracking-widest mb-12">
               Te amo, Mafer.
