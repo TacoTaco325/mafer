@@ -235,7 +235,7 @@ export default function MaferBirthdayPage() {
     }
   ], []);
 
-  const hiddenLetterContent = "Mi nena hermosa,\n\nCuento los días para por fin acortar todos esos kilómetros que hoy nos separan. Aunque la distancia física sea grande, mi corazón ya vive contigo. Cada llamada, cada mensaje y cada ataque de risa juntos me confirman que vales toda la espera del mundo.\n\nEl día que te vea en persona y te pueda dar ese primer abrazo, sabré que llegué a mi hogar verdadero.\n\nTe quiero infinito.";
+  const hiddenLetterContent = "Mi nena hermosa,\n\nCuento los días para por fin acortar todos esos kilómetros que hoy nos separan. Aunque la distancia física sea grande, mi corazón ya vive con vos. Cada llamada, cada mensaje y cada ataque de risa juntos me confirman que vales toda la espera del mundo.\n\nEl día que te vea en persona y te pueda dar ese primer abrazo, sabré que llegué a mi hogar verdadero.\n\nTe quiero infinito.";
   const letterWords = useMemo(() => hiddenLetterContent.split(/(\s+)/), [hiddenLetterContent]);
 
   const handleNextReason = useCallback(() => {
